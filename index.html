@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título visible en el navegador -->
+    <title>SuperHero</title>
+
+    <!-- Metadatos adicionales -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Oscar Muñoz B.">
+    <meta name="description" content="Prueba - Fundamentos de programación en
+    JavaScript">
+    <meta name="keywords" content="SuperHero, JavaScript, prueba, programación">
+
+    <!-- CSS Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="assets/img/sh2.jpg" alt="superHero logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">SuperHero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.superheroapi.com/" target="_blank">SuperHero API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.superheroapi.com/ids.html" target="_blank">SuperHero
+                                IDs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container mt-2">
+        <!-- buscador -->
+        <section class="text-center ">
+            <img id="mainImage" class="img-fluid" src="assets/img/sh1.jpg" alt="SuperHero">
+            <h1>Encuentra tu SuperHero</h1>
+            <div>
+                <div class="mb-3">
+                    <label for="heroNumber" class="form-label">
+                        Ingresa el número del SuperHero a buscar (1 al 731)
+                    </label>
+                    <!-- input del superHero a buscar -->
+                    <input type="number" min="1" max="731" class="form-control w-75 m-auto" id="heroNumber">
+                </div>
+                <button id="findHero" class="btn btn-primary">Buscar</button>
+            </div>
+        </section>
+        <!-- respuesta de API -->
+        <div class="row">
+            <!-- superHero buscado -->
+            <div id="superHero" class="col-12 col-xl-6 g-0 mb-2 "></div>
+            <!-- chart del superHero -->
+            <div id="chartContainer" class="col-12 col-xl-6 g-0 mb-2"></div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class=" bg-dark text-center py-4 mt-2">
+        <div class="container">
+            <p class="text-white m-0">Datos proporcionados por:
+                <a href="https://www.superheroapi.com/" target="_blank"
+                    class="text-decoration-none link-light">Superhero API</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS Bootstrap 5.3.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- canvasJS jQuery -->
+    <script src="https://cdn.canvasjs.com/ga/jquery.canvasjs.min.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

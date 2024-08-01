@@ -1,0 +1,21 @@
+/* logo del navbar */
+.logo {
+    width: 50px;
+}
+
+/* Diseño responsive */
+@media screen and (max-width: 1199.5px) {
+    .chartContainer {
+        height: 500px;
+    }
+
+    .imgHero {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imgHero {
+        height: 80%;
+    }
+}
