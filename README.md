@@ -9,7 +9,7 @@ Esta prueba corresponde al proyecto final del módulo **Fundamentos de programac
 - Cómo clonar el proyecto
 
 ## &#129499; Descripción 
-El proyecto consiste en usar los conocimientos del módulo **Fundamentos de programación en Javascript** para crear el sitio web de la revista semanal SuperHero Chile, para esto se usó la información de Superhéroes que proporciona la API denominada [“SuperHero API”](https://www.superheroapi.com/),
+El proyecto consiste en usar los conocimientos del módulo **Fundamentos de programación en Javascript** para crear el sitio web de la revista semanal SuperHero Chile, para esto se usó la información de Superhéroes que proporciona la API denominada [“SuperHero API”](https://www.superheroapi.com/)
 
 ## &#129503; Tecnologías utilizadas
 Este proyecto utiliza las siguientes tecnologías:
