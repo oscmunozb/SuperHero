@@ -3,7 +3,8 @@ $(document).ready(function () {
     const SUPER_HERO_API_URL = 'https://www.superheroapi.com/api.php/d05c7a4e9328e9de8a45eb679aa7d459/';
 
     /* Click en botón de buqueda #findHero */
-    $('#findHero').click(function () {
+    $('#findHero').click(function (event) {
+        event.preventDefault();
         /* Input ingresado */
         const heroNumber = parseInt($('#heroNumber').val());
         if (isNaN(heroNumber)) {
