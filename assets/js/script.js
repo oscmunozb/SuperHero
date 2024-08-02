@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('#findHero').click(function (event) {
         event.preventDefault();
         /* Input ingresado */
-        const heroNumber = parseInt($('#heroNumber').val());
+        let heroNumber = parseInt($('#heroNumber').val());
         if (isNaN(heroNumber)) {
             /* Verificación de que se ingresa un número */
             alert("Ingrese un número")
@@ -49,8 +49,8 @@ $(document).ready(function () {
 
     /* Información enviada a index.html */
     function displayHeroInfo(data) {
-        const aliasesString = data.biography.aliases.join(', ');
-        const superHeroHtml = `
+        let aliasesString = data.biography.aliases.join(', ');
+        let superHeroHtml = `
             <h2 class="text-center fw-bold">SuperHero Encontrado</h2>
             <div class="card">
                 <div class="row g-0">
@@ -76,8 +76,8 @@ $(document).ready(function () {
 
     /* Gráfico de canvasJS */
     function displayHeroChart(data) {
-        const powerstats = data.powerstats;
-        const chartData = [];
+        let powerstats = data.powerstats;
+        let chartData = [];
         let hasNullData = false;
         for (let stat in powerstats) {
             if (powerstats.hasOwnProperty(stat)) {
@@ -88,7 +88,7 @@ $(document).ready(function () {
                 chartData.push({ y: powerstats[stat], label: stat });
             }
         }
-        const options = {
+        let options = {
             animationEnabled: true,
             title: {
                 text: `Estadísticas de Poder para ${data.name}`
